@@ -46,10 +46,11 @@ sample_input = np.array([[home_team_id, opponent_team_id, 1, data['team_avg_goal
                            data['opponent_avg_conceded_last5'],data['opponent_avg_goals_last5']]])
 predicted_goals_scored = loaded_gs_model.predict(sample_input)
 predicted_goals_conceded = loaded_gc_model.predict(sample_input)
-st.write(f"Predicted Goals by {home_team_name}: {round(predicted_goals_scored[0])}")
-st.write(f"Predicted Goals by {opponent_team_name}: {round(predicted_goals_conceded[0])}")
+st.write(f"Predicted Goals For Home Team {home_team_name}: {round(predicted_goals_scored[0])}")
+st.write(f"Predicted Goals For Away Team {opponent_team_name}: {round(predicted_goals_conceded[0])}")
 
 # # Display selections
 # st.write(f"Home Team: {home_team_name} (ID: {home_team_id})")
 # st.write(f"Opponent Team: {opponent_team_name} (ID: {opponent_team_id})")
+
 
