@@ -34,7 +34,7 @@ opponent_team_name = st.selectbox("Select Opponent Team", opponent_choices,index
 if home_team_name and opponent_team_name:
     home_team_id = team_map[home_team_name]
     opponent_team_id = team_map[opponent_team_name]
-    st.write(f"Home team ID: {home_team_id}, Opponent team ID: {opponent_team_id}")
+    # st.write(f"Home team ID: {home_team_id}, Opponent team ID: {opponent_team_id}")
 else:
     st.info("Please select both teams to continue.")
 
@@ -58,6 +58,7 @@ st.write(f"Predicted Goals For Away Team {opponent_team_name}: {round(predicted_
 # # Display selections
 # st.write(f"Home Team: {home_team_name} (ID: {home_team_id})")
 # st.write(f"Opponent Team: {opponent_team_name} (ID: {opponent_team_id})")
+
 
 
 
