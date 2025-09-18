@@ -5,9 +5,9 @@ import joblib
 import pymysql
 import requests
 conn = pymysql.connect(
-            host='localhost',
-            user='root',
-            password='12345678',
+            host='mydb.c1eg6mc4azh2.ap-south-1.rds.amazonaws.com',
+            user='admin',
+            password='kreupai123',
             database='kreupai',
         )
 cursor = conn.cursor(pymysql.cursors.DictCursor)
@@ -52,3 +52,4 @@ st.write(f"Predicted Goals by {opponent_team_name}: {round(predicted_goals_conce
 # # Display selections
 # st.write(f"Home Team: {home_team_name} (ID: {home_team_id})")
 # st.write(f"Opponent Team: {opponent_team_name} (ID: {opponent_team_id})")
+
