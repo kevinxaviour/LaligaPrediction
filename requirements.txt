@@ -4,3 +4,4 @@ joblib
 pymysql
 requests
 streamlit
+catboost
